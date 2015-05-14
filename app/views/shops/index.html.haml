@@ -1,0 +1,4 @@
+%h1 Shops List
+%ul
+  - @shops.each do |shop|
+    %li= "#{shop.name} - #{shop.description}"
