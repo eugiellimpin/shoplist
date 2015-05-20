@@ -1,7 +1,8 @@
-%h1 Shops List
 - @shops.each do |shop|
-  %h3= shop.name
-  %p= shop.description
-  %small= shop.website
-  %small= shop.facebook
-  %small= shop.instagram
+  .shop
+    %h3= shop.name
+    %p= shop.description
+    %ul
+      %li= shop.website
+      %li= shop.facebook
+      %li= shop.instagram
