@@ -1,5 +1,6 @@
 - @shops.each do |shop|
   .shop
+    = image_tag shop.cover_url.to_s
     %h3= shop.name
     %p= shop.description
     %ul
