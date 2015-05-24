@@ -8,8 +8,11 @@
 
       %ul
         - unless shop.website.blank?
-          %li= shop.website
+          %li
+            = link_to shop.website, "http://#{shop.website}", html_options = {:target => '_blank'}
         - unless shop.facebook.blank?
-          %li= shop.facebook
+          %li
+            = link_to shop.facebook, "http://facebook.com/#{shop.facebook}", html_options = {:target => '_blank'}
         - unless shop.instagram.blank?
-          %li= shop.instagram
+          %li
+            = link_to "@#{shop.instagram}", "http://instagram.com/#{shop.instagram}", html_options = {:target => '_blank'}
