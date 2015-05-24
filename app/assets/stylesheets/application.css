@@ -24,18 +24,6 @@ html {
 }
 
 
-main {
-  max-width: 960px;
-  min-width: 300px;
-  margin: 0 auto;
-}
-
-.shop {
-  border: 1px solid;
-  border-radius: 5px;
-}
-
-
 /* grid system
  *
  * https://css-tricks.com/dont-overthink-it-grids/
@@ -60,4 +48,17 @@ main {
 /* last column for each row should not have a right margin */
 [class*='column-']:nth-child(3n+3) {
   margin-right: 0;
+}
+
+
+header,
+main {
+  max-width: 960px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.shop {
+  border: 1px solid;
+  border-radius: 5px;
 }
