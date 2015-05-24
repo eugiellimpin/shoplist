@@ -59,6 +59,5 @@ main {
 }
 
 .shop {
-  border: 1px solid;
-  border-radius: 5px;
+  min-height: 310px;
 }
