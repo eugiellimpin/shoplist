@@ -1,9 +1,10 @@
-- @shops.each do |shop|
-  .shop
-    = image_tag shop.cover_url(:thumb).to_s
-    %h3= shop.name
-    %p= shop.description
-    %ul
-      %li= shop.website
-      %li= shop.facebook
-      %li= shop.instagram
+.grid
+  - @shops.each do |shop|
+    .column-1-3.shop
+      = image_tag shop.cover_url(:thumb).to_s
+      %h3= shop.name
+      %p= shop.description
+      %ul
+        %li= shop.website
+        %li= shop.facebook
+        %li= shop.instagram
