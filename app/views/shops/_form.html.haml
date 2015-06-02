@@ -1,0 +1,10 @@
+= simple_form_for @shop do |f|
+  = f.input :name
+  = f.input :description
+  = f.input :website
+  = f.input :facebook
+  = f.input :instagram
+  = image_tag(@shop.cover) if @shop.cover?
+  = f.file_field :cover
+  = f.hidden_field :cover_cache
+  = f.button :submit

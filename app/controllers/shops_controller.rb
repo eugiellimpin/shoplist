@@ -37,6 +37,6 @@ class ShopsController < ApplicationController
 
   private
     def shop_params
-      params.require(:shop).permit(:name, :description, :facebook, :instagram, :website, :cover)
+      params.require(:shop).permit(:name, :description, :facebook, :instagram, :website, :cover, :cover_cache)
     end
 end
