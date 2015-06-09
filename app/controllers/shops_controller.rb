@@ -1,20 +1,17 @@
 class ShopsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
+  load_and_authorize_resource
 
   def index
-    @shops = Shop.all
   end
 
   def show
-    @shop = Shop.find(params[:id])
   end
 
   def new
-    @shop = Shop.new
   end
 
   def edit
-    @shop = Shop.find(params[:id])
   end
 
   def create
@@ -28,8 +25,6 @@ class ShopsController < ApplicationController
   end
 
   def update
-    @shop = Shop.find(params[:id])
-
     if @shop.update(shop_params)
       redirect_to @shop
     else
@@ -38,9 +33,7 @@ class ShopsController < ApplicationController
   end
 
   def destroy
-    @shop = Shop.find(params[:id])
     @shop.destroy
-
     redirect_to shops_path
   end
 
