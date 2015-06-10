@@ -29,6 +29,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'devise', '~> 3.5.1'
 gem 'cancancan', '~> 1.10.1'
+gem 'font-awesome-sass', '~> 4.3.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
