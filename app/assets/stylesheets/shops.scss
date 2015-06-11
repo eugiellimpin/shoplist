@@ -8,6 +8,10 @@
 $primary-color: #3D9970; /* Olive */
 $secondary-color: #001F3F; /* Navy */
 
+body {
+  background-color: #ECEFF1;
+}
+
 .shop {
   display: flex;
   flex-direction: column;
