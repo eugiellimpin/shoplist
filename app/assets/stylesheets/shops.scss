@@ -13,9 +13,10 @@ body {
 }
 
 .shop {
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 520px;
 
   h3, a {
     color: $primary-color;
@@ -37,11 +38,16 @@ body {
     }
   }
 
+  .main, .links {
+    padding: 0 20px;
+  }
+
   .main {
     flex: 1;
   }
 
   .links {
     height: 60px;
+    margin-bottom: 20px;
   }
 }

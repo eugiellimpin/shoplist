@@ -67,10 +67,3 @@ main {
   min-width: 300px;
   margin: 0 auto;
 }
-
-
-/* shop cards
- */
-.shop .cover {
-  box-shadow: 2px 2px 3px 3px #ccc;
-}
