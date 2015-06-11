@@ -9,13 +9,16 @@ $primary-color: #3D9970; /* Olive */
 $secondary-color: #001F3F; /* Navy */
 
 .shop {
+  h3, a {
+    color: $primary-color;
+  }
+
   ul {
     list-style: none;
     padding: 0;
 
     li {
       a {
-        color: $primary-color;
         text-decoration: none;
       }
 
