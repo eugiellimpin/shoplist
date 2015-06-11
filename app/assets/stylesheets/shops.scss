@@ -9,12 +9,17 @@ $primary-color: #3D9970; /* Olive */
 $secondary-color: #001F3F; /* Navy */
 
 .shop {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+
   h3, a {
     color: $primary-color;
   }
 
   ul {
     list-style: none;
+    margin: 0;
     padding: 0;
 
     li {
@@ -26,5 +31,13 @@ $secondary-color: #001F3F; /* Navy */
         color: $secondary-color;
       }
     }
+  }
+
+  .main {
+    flex: 1;
+  }
+
+  .links {
+    height: 60px;
   }
 }

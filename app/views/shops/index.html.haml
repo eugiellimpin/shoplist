@@ -1,23 +1,25 @@
 .grid
   - @shops.each do |shop|
     .column-1-3.shop
-      .cover
-        = image_tag shop.cover_url(:thumb).to_s
+      .main
+        .cover
+          = image_tag shop.cover_url(:thumb).to_s
 
-      %h3= shop.name
+        %h3= shop.name
 
-      %p= shop.description
+        %p= shop.description
 
-      %ul
-        - unless shop.website.blank?
-          %li
-            = link_to "http://#{shop.website}", html_options = {:target => '_blank'} do
-              = icon('home', shop.website)
-        - unless shop.facebook.blank?
-          %li
-            = link_to "http://facebook.com/#{shop.facebook}", html_options = {:target => '_blank'} do
-              = icon('facebook-official', shop.facebook)
-        - unless shop.instagram.blank?
-          %li
-            = link_to "http://instagram.com/#{shop.instagram}", html_options = {:target => '_blank'} do
-              = icon('instagram', shop.instagram)
+      .links
+        %ul
+          - unless shop.website.blank?
+            %li
+              = link_to "http://#{shop.website}", html_options = {:target => '_blank'} do
+                = icon('home', shop.website)
+          - unless shop.facebook.blank?
+            %li
+              = link_to "http://facebook.com/#{shop.facebook}", html_options = {:target => '_blank'} do
+                = icon('facebook-official', shop.facebook)
+          - unless shop.instagram.blank?
+            %li
+              = link_to "http://instagram.com/#{shop.instagram}", html_options = {:target => '_blank'} do
+                = icon('instagram', shop.instagram)
