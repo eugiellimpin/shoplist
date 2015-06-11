@@ -5,12 +5,20 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+$background-color: #ECEFF1;
 $primary-color: #3D9970; /* Olive */
 $secondary-color: #FFF; /* White */
 $tertiary-color: #001F3F; /* Navy */
 
 body {
-  background-color: #ECEFF1;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 header, footer {
