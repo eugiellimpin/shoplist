@@ -4,3 +4,24 @@
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+$primary-color: #3D9970; /* Olive */
+$secondary-color: #001F3F; /* Navy */
+
+.shop {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      a {
+        color: $primary-color;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

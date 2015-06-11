@@ -74,16 +74,3 @@ main {
 .shop .cover {
   box-shadow: 2px 2px 3px 3px #ccc;
 }
-
-.shop ul {
-  list-style: none;
-}
-
-.shop ul li a {
-  text-decoration: none;
-  color: #ccc;
-}
-
-.shop ul li a:hover {
-  color: #555;
-}

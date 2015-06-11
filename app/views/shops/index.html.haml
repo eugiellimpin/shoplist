@@ -11,13 +11,13 @@
       %ul
         - unless shop.website.blank?
           %li
-            = icon('home')
-            = link_to shop.website, "http://#{shop.website}", html_options = {:target => '_blank'}
+            = link_to "http://#{shop.website}", html_options = {:target => '_blank'} do
+              = icon('home', shop.website)
         - unless shop.facebook.blank?
           %li
-            = icon('facebook-official')
-            = link_to shop.facebook, "http://facebook.com/#{shop.facebook}", html_options = {:target => '_blank'}
+            = link_to "http://facebook.com/#{shop.facebook}", html_options = {:target => '_blank'} do
+              = icon('facebook-official', shop.facebook)
         - unless shop.instagram.blank?
           %li
-            = icon('instagram')
-            = link_to "@#{shop.instagram}", "http://instagram.com/#{shop.instagram}", html_options = {:target => '_blank'}
+            = link_to "http://instagram.com/#{shop.instagram}", html_options = {:target => '_blank'} do
+              = icon('instagram', shop.instagram)
