@@ -13,13 +13,28 @@ body {
   background-color: #ECEFF1;
 }
 
-header {
+header, footer {
   background-color: $primary-color;
+  color: $secondary-color;
+
+}
+
+header {
+  margin-bottom: 50px;
 
   h1 {
-    color: $secondary-color;
-    margin: 0 0 50px 0;
+    margin: 0;
     padding: 20px 0;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+
+  p {
+    margin: 0;
+    padding: 10px 0;
   }
 }
 
