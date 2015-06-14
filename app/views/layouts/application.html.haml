@@ -15,10 +15,13 @@
 
     %header
       .container
-        %h1 Shops List
-        %ul
-          - if user_signed_in?
-            %li= link_to "Logout", destroy_user_session_path, method: :delete
+        %h1.center Shops List
+
+        %nav.pull-right.center
+          %ul
+            %li= link_to "Add my shop!", "http://goo.gl/forms/m9eDGolqjB", html_options = {target: '_blank'}
+            - if user_signed_in?
+              %li= link_to "Logout", destroy_user_session_path, method: :delete
 
     %main
       .container

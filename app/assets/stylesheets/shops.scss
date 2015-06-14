@@ -30,9 +30,39 @@ header, footer {
 header {
   margin-bottom: 50px;
 
-  h1 {
-    margin: 0;
-    padding: 20px 0;
+  .container {
+    display: flex;
+    height: 60px;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline;
+      }
+
+      /* separator */
+      li:not(:last-child):after {
+        content: "|";
+      }
+
+      li:after {
+        margin: 0 5px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+    }
+
+    a:hover, li:after {
+      color: $tertiary-color;
+    }
   }
 }
 
@@ -84,4 +114,15 @@ footer {
     height: 60px;
     margin-bottom: 20px;
   }
+}
+
+/* utilities */
+
+/* container should be display: flex */
+.pull-right {
+  margin-left: auto;
+}
+
+.center {
+  align-self: center;
 }
