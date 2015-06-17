@@ -27,6 +27,7 @@ gem 'mini_magick'
 gem 'devise', '~> 3.5.1'
 gem 'cancancan', '~> 1.10.1'
 gem 'font-awesome-sass', '~> 4.3.0'
+gem 'pg', '~> 0.18.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -38,7 +39,6 @@ gem 'font-awesome-sass', '~> 4.3.0'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -50,7 +50,6 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg', '~> 0.18.2'
   gem 'rails_12factor', '~> 0.0.3'
 end
 
