@@ -10,6 +10,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   storage :file
   # storage :fog
 
+  # See https://github.com/carrierwaveuploader/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku
+  def cache_dir
+    "#{Rails.root}/tmp/uploads"
+  end
+
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
