@@ -28,6 +28,8 @@ gem 'devise', '~> 3.5.1'
 gem 'cancancan', '~> 1.10.1'
 gem 'font-awesome-sass', '~> 4.3.0'
 gem 'pg', '~> 0.18.2'
+gem 'fog-aws', '~> 0.5.0'
+gem 'fog', '~> 1.31.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
