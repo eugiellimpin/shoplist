@@ -5,7 +5,8 @@
         = image_tag shop.cover_url(:thumb).to_s
 
       .main
-        %h3= shop.name
+        %h3
+          = link_to shop.name, shop_path(shop)
 
         %p= shop.description
 
