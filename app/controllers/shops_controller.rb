@@ -3,6 +3,7 @@ class ShopsController < ApplicationController
   load_and_authorize_resource
 
   def index
+    @shops = Shop.order('lower(name)')
   end
 
   def show
