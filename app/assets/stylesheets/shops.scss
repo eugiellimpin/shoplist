@@ -82,6 +82,10 @@ footer {
   flex-direction: column;
   height: 520px;
 
+  a {
+    text-decoration: none;
+  }
+
   h3, a {
     color: $primary-color;
   }
@@ -92,10 +96,6 @@ footer {
     padding: 0;
 
     li {
-      a {
-        text-decoration: none;
-      }
-
       a:hover {
         color: $tertiary-color;
       }
