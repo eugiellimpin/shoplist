@@ -21,6 +21,8 @@
         %nav.pull-right.center
           %ul
             %li= link_to "Recommend a shop", "http://goo.gl/forms/m9eDGolqjB", html_options = {target: '_blank'}
+            - if current_user.try(:admin?)
+              %li= link_to 'Add a shop', new_shop_path
             - if user_signed_in?
               %li= link_to "Logout", destroy_user_session_path, method: :delete
 
